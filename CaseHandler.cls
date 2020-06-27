@@ -46,6 +46,7 @@ public class CaseHandler {
                             || (cas.SuppliedPhone !=null && cas.SuppliedPhone.equals(conts.HomePhone))
                             || (cas.SuppliedPhone !=null && cas.SuppliedPhone.equals(conts.MobilePhone)))
                             {
+                        //test
                         numMatch ++;
                     }
                     
