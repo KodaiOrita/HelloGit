@@ -41,9 +41,11 @@ public class CaseHandler {
                     if(cas.SuppliedEmail != null && cas.SuppliedEmail.equals(conts.Email)){
                         numMatch ++;
                     }
-                    //本当は自宅電話番号と携帯電話番号クロスでチェックする.Phone,HomePhone,MobilePhoneどれ使うか決める。
-                    if((cas.SuppliedPhone !=null && cas.SuppliedPhone.equals(conts.HomePhone))
-                            || (cas.SuppliedPhone !=null && cas.SuppliedPhone.equals(conts.MobilePhone)){
+                    //本当は自宅電話番号と携帯電話番号クロスでチェックする.Phone,HomePhone,MobilePhoneすべてチェックする。
+                    if((cas.SuppliedPhone !=null && cas.SuppliedPhone.equals(conts.Phone))
+                            || (cas.SuppliedPhone !=null && cas.SuppliedPhone.equals(conts.HomePhone))
+                            || (cas.SuppliedPhone !=null && cas.SuppliedPhone.equals(conts.MobilePhone)))
+                            {
                         numMatch ++;
                     }
                     
