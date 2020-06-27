@@ -42,7 +42,8 @@ public class CaseHandler {
                         numMatch ++;
                     }
                     //本当は自宅電話番号と携帯電話番号クロスでチェックする.Phone,HomePhone,MobilePhoneどれ使うか決める。
-                    if(cas.SuppliedPhone !=null && cas.SuppliedPhone.equals(conts.HomePhone)){
+                    if((cas.SuppliedPhone !=null && cas.SuppliedPhone.equals(conts.HomePhone))
+                            || (cas.SuppliedPhone !=null && cas.SuppliedPhone.equals(conts.MobilePhone)){
                         numMatch ++;
                     }
                     
